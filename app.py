@@ -10,7 +10,7 @@ role = st.selectbox("Select Role", ["Software Engineer","Scrum Master", "Data Sc
 question_type = st.selectbox("Select Question Type", ["Behavioral", "Technical"])
 tone = st.selectbox("Select Tone", ["Formal", "Casual", "Neutral"])
 experience_level = st.selectbox("Select Experience Level", ["Junior", "Mid", "Senior"])
-location = st.selectbox("Select Location", ["Hyderabad", "Bangalore", "Chennai", "Hybrid", "Remote"])
+location = st.selectbox("Select Location To see Open Positions", ["Hyderabad", "Bangalore", "Chennai", "Hybrid", "Remote"])
 
 question = st.text_input("Enter your question:")
 
@@ -37,4 +37,6 @@ def generate_linkedin_job_search_url(role, location):
 # Display job search link
 if st.button("Show Job Openings"):
     job_search_url = generate_linkedin_job_search_url(role, location)
-    st.write(f"[Click here to see job openings on LinkedIn]( {job_search_url} )")
+    #st.write(f"[Click here to see job openings on LinkedIn]( {job_search_url} )")
+    st.markdown(f'<a href="{job_search_url}" target="_blank">Click here to view job openings on LinkedIn</a>', unsafe_allow_html=True)
+    st.stop()  # Stop further execution after redirecting

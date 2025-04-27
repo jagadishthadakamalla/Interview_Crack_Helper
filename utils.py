@@ -1,4 +1,4 @@
-from langchain_openai import AzureChatOpenAI
+from langchain.chat_models import AzureChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import streamlit as st
