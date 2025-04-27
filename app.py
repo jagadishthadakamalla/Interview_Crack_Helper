@@ -3,7 +3,7 @@ from utils import generate_answer  # This imports the function that generates th
 from prompt_builder import build_prompt  # This imports the prompt-building function
 
 # Streamlit app setup
-st.title("InterviewStar - AI Interview Assistant")
+st.title("Interview Cracker - AI Interview Assistant")
 
 # User selects role, question type, tone, experience level, and location
 role = st.selectbox("Select Role", ["Software Engineer","Scrum Master", "Data Scientist", "Project Manager"])
