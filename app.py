@@ -10,7 +10,8 @@ role = st.selectbox("Select Role", ["Software Engineer","Scrum Master", "Data Sc
 question_type = st.selectbox("Select Question Type", ["Behavioral", "Technical"])
 tone = st.selectbox("Select Tone", ["Formal", "Casual", "Neutral"])
 experience_level = st.selectbox("Select Experience Level", ["Junior", "Mid", "Senior"])
-location = st.selectbox("Select Location To see Open Positions", ["Hyderabad", "Bangalore", "Chennai", "Hybrid", "Remote"])
+location = st.selectbox("Select Location To see Open Positions", ["Hyderabad", "Bangalore", "Chennai", "Hybrid","United States",
+                                                                  "Remote"])
 
 question = st.text_input("Enter your question:")
 
